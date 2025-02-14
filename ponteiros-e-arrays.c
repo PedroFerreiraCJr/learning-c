@@ -117,5 +117,48 @@ int main() {
         printf("%d\n", (vet + indice));
     }
 
+    printf("-------------------------\n");
+    // ponteiros e arrays multidimensionais:
+    // os dados dos arrays multidimensionais são armazenados linearmente na memória;
+    // é o uso dos colchetes que cria a impressão de estarmos trabalhando com mais de uma
+    // dimensão;
+    {
+        int mat[5][5];
+
+        // apesar de ser bidimensional, é armazenada como um simples array na memória;
+        // podemos acessar os elementos de um array multidimensional usando a notação
+        // tradicional de colchetes, como por exemplo, 'mat[linha][coluna]', ou a
+        // notação de ponteiros, conforme a expressão: *(*(mat + linha) + colua);
+    }
+
+    // exemplo: acessando um array multidimensional utilizando ponteiros:
+    // usando array
+    {
+        int mat[2][2] = {
+            { 1, 2 }, { 3, 4 }
+        };
+
+        int i, j;
+        for (i = 0; i < 2; i++) {
+            for (j = 0; j < 2; j++) {
+                printf("%d\n", mat[i][j]);
+            }
+        }
+    }
+
+    // usando ponteiro
+    {
+        int mat[2][2] = {
+            { 1, 2 }, { 3, 4 }
+        };
+
+        int *p = &mat[0][0];
+
+        int i;
+        for (i = 0; i < 4; i++) {
+            printf("%d\n", *(p + i));
+        }
+    }
+
     return 0;
 }
