@@ -118,7 +118,8 @@ int main() {
     }
 
     printf("-------------------------\n");
-    // ponteiros e arrays multidimensionais:
+
+    // seção - ponteiros e arrays multidimensionais:
     // os dados dos arrays multidimensionais são armazenados linearmente na memória;
     // é o uso dos colchetes que cria a impressão de estarmos trabalhando com mais de uma
     // dimensão;
@@ -158,6 +159,59 @@ int main() {
         for (i = 0; i < 4; i++) {
             printf("%d\n", *(p + i));
         }
+    }
+
+    printf("-------------------------\n");
+
+    // seção - ponteiros e arrays multidimensionais:
+    // a linguagem C também permite que declaremos arrays de ponteiros como fazemos com
+    // qualquer outro tipo de dado;
+    // a declaração de um array de ponteiros segue a esta forma geral:
+    // tipo_dado *nome_array[tamanho];
+
+    // assim a declaração de um array de ponteiros para inteiros de tamanho 10 seria;
+    int *p[10];
+
+    // quanto ao seu uso, não existem diferenças entre um array de ponteiros e um
+    // ponteiro; basta lembrar que um array é sempre indexado; assim, para atribuir
+    // o endereço de uma variável x a uma posição do array de ponteiros, podemos
+    // utilizar o seguinte código;
+    {
+        int x = 42;
+        int indice = 0;
+        p[indice] = &x;
+
+        // e para retornar o conteúdo guardado nessa posição de memória:
+        printf("%d\n", *p[indice]);
+    }
+
+    // cada posição de um array de ponteiros pode armazenar o endereço de uma
+    // variável ou o endereço da posição inicial de um outro array.
+    {
+        // declara um array de ponteiros para int, com tamanho 2;
+        int *ptr_vet[2];
+
+        // declara, e inicializa a variável 'x', do tipo 'int', para o valor '10';
+        // nesta mesma instrução de declaração, define um array de inteiros, com tamanho
+        // 2, e inicializa os elementos deste array, para os valores '20', e '30';
+        int x = 10, y[2] = { 20, 30 };
+
+        // armazena no array de ponteiros do tipo 'int', na primeira posição deste array,
+        // o endereço da variável 'x';
+        ptr_vet[0] = &x;
+
+        // 'y' é um array de inteiros, logo, seu identificador, é o endereço do
+        // primeiro elemento do array;
+        ptr_vet[1] = y;
+
+        // imprime o endereço das variáveis;
+        // neste caso, o endereço de 'x', que foi armazenado na primeira posição do array 'ptr_vet';
+        // assim como, o endereço de 'y', que foi armazenado na segunda posição do array 'ptr_vet';
+        printf("O endereco em 'ptr_vet[0]': %p.\n", ptr_vet[0]);
+        printf("O endereco em 'ptr_vet[1]': %p.\n", ptr_vet[1]);
+
+        printf("O conteudo em 'ptr_vet[0]': %d.\n", *ptr_vet[0]);
+        printf("O conteudo em 'ptr_vet[1][1]': %d.\n", ptr_vet[1][1]);
     }
 
     return 0;
