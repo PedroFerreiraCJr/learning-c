@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="learning-c" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/learning-c" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/learning-c" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="arrays-de-caracteres.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="funcoes-recursao.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="funcoes-tipos-de-passagem-de-parametros.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="funcoes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ponteiros-e-arrays.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ponteiros-genericos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ponteiros.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tipos-definidos-pelo-usuario-enumc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tipos-definidos-pelo-usuario-struct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tipos-definidos-pelo-usuario-typedef.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tipos-definidos-pelo-usuario-union.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

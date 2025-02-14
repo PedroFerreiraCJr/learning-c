@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1736402979 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1739056987 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\arrays-de-caracteres.c
+	<stdio.h>
+	<string.h>
+
+1736642229 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\tipos-definidos-pelo-usuario.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1736992052 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\tipos-definidos-pelo-usuario-struct.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1737067968 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\tipos-definidos-pelo-usuario-union.c
+	<stdio.h>
+	<stdlib.h>
+
+1737250452 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\tipos-definidos-pelo-usuario-enumc.c
+	<stdio.h>
+
+1737595404 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\tipos-definidos-pelo-usuario-typedef.c
+	<stdio.h>
+
+1737826486 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\funcoes.c
+	<stdio.h>
+
+1737921015 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\funcoes-tipos-de-passagem-de-parametros.c
+	<stdio.h>
+
+1738284224 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\funcoes-recursao.c
+	<stdio.h>
+
+1739056947 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\ponteiros.c
+	<stdio.h>
+	<stdlib.h>
+
+1739056871 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\ponteiros-genericos.c
+	<stdio.h>
+
+1739130476 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\ponteiros-e-arrays.c
+	<stdio.h>
+
