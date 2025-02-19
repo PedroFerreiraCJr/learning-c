@@ -3,7 +3,7 @@
 /**
 * seção: ponteiros e arrays;
 */
-int main() {
+int _11main() {
     // ponteiros e arrays possuem uma ligação muito forte dentro da linguagem C;
     // arrays são agrupamentos de dados do mesmo tipo na memória;
     // quando declaramos um array, informamos para o computador reserver certa
