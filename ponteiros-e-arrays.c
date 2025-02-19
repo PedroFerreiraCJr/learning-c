@@ -23,13 +23,13 @@ int main() {
 
     // exemplo: acessando array utilizando ponteiros;
     {
-        int vet[5] = {1, 2, 3, 4, 5};
+        int vet[2] = {1, 2};
 
         // como o nome do array já é um ponteiro, basta atribuí-lo a um ponteiro
         // de tipo correspondente;
         int *p = vet;
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             // a notação de colchetes, aquela utilizada principalmente com arrays
             // também pode ser utilizada com ponteiros;
             // conforme o seguinte exemmplo;
@@ -39,13 +39,13 @@ int main() {
 
     // exemplo: acessando array utilizando aritmética de ponteiros:
     {
-        int vet[5] = {1, 2, 3, 4, 5};
+        int vet[2] = {1, 2};
 
         // como o nome do array já é um ponteiro, basta atribuí-lo a um ponteiro
         // de tipo correspondente;
         int *p = vet;
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             // usando aritmética de ponteiros para percorrer um array;
 
             // para calcular o endereço no qual o operador de desreferênciamento
@@ -212,6 +212,36 @@ int main() {
 
         printf("O conteudo em 'ptr_vet[0]': %d.\n", *ptr_vet[0]);
         printf("O conteudo em 'ptr_vet[1][1]': %d.\n", ptr_vet[1][1]);
+    }
+
+    printf("-------------------------\n");
+
+    // seção - ponteiro para ponteiro:
+    // aprendemos, ao longo deste capítulo que, toda informação que manipulamos está
+    // armazenada na memória do computador, e portanto, possui um endereço de memória
+    // associado a ela;
+    // ponteiros, assim como qualquer variável, também ocupa um espaço na memória do
+    // computador, e possuem um endereço de memória associado ao seu nome;
+    // como não existem diferenças entre a maneira como uma variável e um ponteiro são
+    // guardadas na memória, é possível criar um ponteiro que aponte para o endereço
+    // de outro ponteiro;
+
+    // a linguagem C permite criar ponteiros com diferentes níveis de apontamento, isto
+    // é, ponteiros que apontam para outros ponteiros;
+
+    // a declaração de um ponteiro para ponteiro criado pelo programador segue esta
+    // sintaxe: tipo_do_ponteiro **nome_do_ponteiro;
+
+    // exemplo: ponteiro para ponteiro;
+    {
+        int x = 10;
+        int *ptr = &x;
+        int **ptr2 = &ptr;
+
+        printf("Endereco em 'ptr2': %p.\n", ptr2);
+        printf("Conteudo em '*ptr2': %p.\n", *ptr2);
+        printf("Conteudo em '**ptr2': %d.\n", **ptr2);
+        printf("Ocupa %d bytes.\n", sizeof(int*));
     }
 
     return 0;
