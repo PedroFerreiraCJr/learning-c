@@ -31,6 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="a.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="alocacao-dinamica.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -46,6 +49,10 @@
 		<Unit filename="funcoes.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

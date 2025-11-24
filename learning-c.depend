@@ -46,7 +46,17 @@
 1739926942 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\ponteiros-e-arrays.c
 	<stdio.h>
 
-1739929482 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\alocacao-dinamica.c
+1761080005 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\alocacao-dinamica.c
 	<stdio.h>
 	<stdlib.h>
+
+1761080443 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\a.c
+	<stdio.h>
+	"lib.h"
+
+1761080473 c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\lib.h
+
+1761080646 source:c:\users\pedro.laptop-6ev6e223\documents\workspace-cpp\learning-c\lib.c
+	<stdio.h>
+	"lib.h"
 
